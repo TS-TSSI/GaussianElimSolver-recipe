@@ -1,0 +1,15 @@
+{% set version = "1.0.0" %}
+
+package:
+  name: libsolver
+  version: {{ version }}
+
+source:
+  git_rev: main
+  git_url: https://github.com/TS-TSSI/GaussianElimSolver.git
+
+requirements:
+  build:
+    - cmake
+    - make
+    - {{ compiler('cxx') }}
